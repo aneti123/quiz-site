@@ -1,0 +1,141 @@
+* {
+    font-size: 24px;
+    font-family:'Courier New', Courier, monospace
+}
+#welcome {
+    background-color: white;
+    width: 60%;
+    height: 60vh;
+    text-align: center;
+}
+
+#quiz-selection {
+    display: flex;
+    height: 60%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#quiz-selection div {
+    width: 100%;
+
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 45px;
+    margin-top: 3%;
+    height: 37%;
+    padding-left: 20vw;
+    padding-right: 20vw;
+
+    position: relative;
+    width: 98vw;
+    right: calc(19vw);
+
+    background-color: #e2ece9;
+    
+    border-top:4px solid black;
+    border-bottom:4px solid black;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly  ;
+    align-items: center;
+    background-color: #cddafd;
+}
+
+select {
+    width: 30%;
+    
+    border: solid 2px black;
+    padding: 2%;
+    background-image:
+        linear-gradient(45deg, transparent 50%, black 50%),
+        linear-gradient(135deg, black 50%, transparent 50%),
+        linear-gradient(to right, white, white);
+    background-position: 
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        100% 0;
+    background-size:
+        5px 5px,
+        5px 5px,
+        2.5em 2.5em;
+    background-repeat: no-repeat;
+
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+select:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+form {
+    width: 100%;
+}
+
+.boxed label {
+    display: inline-block;
+    width: 25%;
+    border: solid 2px black;
+    padding: 2%;
+    transition: all 0.3s;
+}
+
+.boxed input[type="radio"] {
+    display: none;
+}
+
+.boxed input[type="radio"]:checked + label[for="easy"] {
+    border: solid 2px rgb(193, 236, 197);
+}
+
+.boxed input[type="radio"]:checked + label[for="medium"] {
+    border: solid 2px rgb(248, 224, 185);
+}
+
+.boxed input[type="radio"]:checked + label[for="hard"] {
+    border: solid 2px rgb(251, 200, 200);
+}
+
+.boxed input[type="radio"]:hover + label[for="easy"] {
+    background-color: rgb(193, 236, 197);
+}
+
+.boxed input[type="radio"]:hover + label[for="medium"] {
+    background-color: rgb(248, 224, 185);
+}
+
+.boxed input[type="radio"]:hover + label[for="hard"] {
+    background-color: rgb(251, 200, 200);
+}
+
+
+
+button {
+    width: 18%;
+    background-color: #fde2e4;
+    padding: 1%;
+    border: solid 2px black;
+}
+
+#play {
+    display: flex;
+    justify-content: space-evenly;
+}
+
